@@ -20,13 +20,15 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Product ID" />
+                android:text="Product ID"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/productID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Not assigned" />
+                android:text="Not assigned"
+                android:textSize="18sp" />
         </TableRow>
 
         <TableRow
@@ -37,19 +39,37 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Product Name" />
+                android:text="Product Name"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/productName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10" />
+                android:ems="10"
+                android:textSize="18sp" />
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Quantity"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/productQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="18sp" />
+        </TableRow>
 
     </TableLayout>
 </LinearLayout>
