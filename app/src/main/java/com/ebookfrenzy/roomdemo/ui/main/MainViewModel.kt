@@ -16,4 +16,20 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         allProducts = repository.allProducts
         searchResults = repository.searchResults
     }
+
+    fun insertProduct(product: Product) {
+        repository.insertProduct(product)
+    }
+    fun findProduct(name: String) {
+        repository.findProduct(name)
+    }
+    fun deleteProduct(name: String) {
+        repository.deleteProduct(name)
+    }
+    fun getSearchResults(): MutableLiveData<List<Product>> {
+        return searchResults
+    }
+    fun getAllProducts(): LiveData<List<Product>>? {
+        return allProducts
+    }
 }
